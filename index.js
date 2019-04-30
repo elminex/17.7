@@ -29,7 +29,7 @@ fs.readdir('./', (err, files) => {
         if (err) throw err;
         fs.readFile('./folder.txt', 'utf-8', (err, data) => {
             if (err) throw err;
-            console.log(data.red);
-        })
+            console.log('Zawartość folderu:' + data.red);
+        });
     });
 });
